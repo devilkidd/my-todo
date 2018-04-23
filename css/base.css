@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    transition: background 0.2s;
+    
+}
+body{
+    background: #00334b;
+    color: #fff;
+}
+body>h1{
+    text-align: center;
+}
+input[type=text],input[type=date],textarea{
+    width: 100%;
+    display: block;
+    background: #ccc;
+}
+textarea:hover,textarea:focus{
+    outline: none; 
+
+}
+input[type=text]:hover,input[type=date]:hover,
+input[type=text]:focus,input[type=date]:focus,
+{
+    background: #fff;
+    outline: none; 
+    
+}
+input,.task-item,button,.task-detail,
+textarea{
+    border-radius: 3px;
+    padding: 10px;
+    border: 0;
+}
+button{
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+    background: #46b1e4;
+}
+button:hover{
+    background: #5fb9e4;
+}
+textarea{
+    min-height: 100px;
+}
+.add-task button{
+    width: 15%;
+}
+.add-task input{
+    float:left;
+    width: 84%;
+    margin-right: 1%;
+    
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+.task-list{
+    margin: 10px 0;
+}
+.task-item{
+    padding: 10px;
+    background: #fff;
+    color: #333;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+}
+.task-item:hover{
+    background: #ddd;
+}
+.task-item .task-content{
+    margin-left: 10px;
+}
+.task-detail,.task-detail-mask{
+    position: absolute;
+    
+}
+.task-detail{
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: -25%;
+    width: 50%;
+    background: #fff;
+    padding: 10px;
+    z-index: 999;
+    color:#333;
+    display: none;
+}
+
+.task-detail .task_detail_content{
+    padding-left:8px;
+}
+.task-detail .input-item{
+    margin-bottom: 10px;
+}
+.task-detail .content{
+    padding: 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.task-detail-mask{
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    display: none;
+}
+.action{
+    color: #999;
+    font-size: 90%;
+    cursor: pointer;
+}
+.action:hover{
+    color: #444;
+}
+.fr{
+    float: right;
+}
+.task-item.completed{
+    color:#aaa;
+    opacity: 0.6;
+}
+.msg{
+    display: none;
+    text-align: center;
+    background: rgb(249, 253, 1);
+    color: #333;
+    padding:10px;
+    overflow: hidden;
+}
+.anchor{
+    cursor: pointer;
+    padding: 1px 5px;
+    float: right;
+    margin-right: 20px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background: #fff;
+}
+

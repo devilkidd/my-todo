@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Todo</title>
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./node_modules/jquery-datetimepicker/bulid/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+    <div class="msg">
+        <span class="msg-content"></span>
+        <span class="anchor msg_confirm">知道了</span>
+    </div>
+    <h1>My Todo</h1>
+    <div class="container">
+        <div class="add-task">
+            <input type="text" placeholder="eg.学习js" name="content" class="add-task-content" autofocus autocomplete="off">
+            <button type="submit" class="submit-task">submit</button>
+        </div>
+        <div class="task-list">
+            <!-- <div class="task-item">
+                <input type="checkbox">
+                <span class="task-content">test</span>
+                <span>delete</span>
+                <span>detail</span>
+            </div> -->
+            
+        </div>
+        <div class="task-detail">
+            <div class="content">test</div>
+            <div>
+                <div class="desc">
+                    <textarea name="" id="" ></textarea>
+                </div>
+            </div>
+            <div class="remind">
+                <input type="date">
+            </div>
+        </div>
+    </div>
+    <div class="task-detail-mask"></div>
+    <audio src="./189.mp3" class="alerter"></audio>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/store.js/store.js"></script>
+    <script src="./node_modules/jquery-datetimepicker/bulid/jquery.datetimepicker.full.js"></script>
+    <script src="./js/base.js"></script>
+</body>
+
+</html>
